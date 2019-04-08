@@ -6,6 +6,7 @@ import com.thoughtmechanix.hystrix.clients.CompanyDiscoveryClient;
 import com.thoughtmechanix.hystrix.clients.CompanyFeignClient;
 import com.thoughtmechanix.hystrix.clients.CompanyRestClient;
 import com.thoughtmechanix.hystrix.model.Asset;
+import com.thoughtmechanix.hystrix.model.AssetType;
 import com.thoughtmechanix.hystrix.model.Company;
 import com.thoughtmechanix.hystrix.repository.AssetRepository;
 import com.thoughtmechanix.hystrix.utils.UserContextHolder;
@@ -13,6 +14,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.logging.Logger;
@@ -63,16 +65,61 @@ public class AssetService {
 //    }
 
 
-    @HystrixCommand(
-            commandProperties=
-                    {@HystrixProperty(
-                            name="execution.isolation.thread.timeoutInMilliseconds",
-                            value="12000")})
+//    @HystrixCommand(
+//            commandProperties=
+//                    {@HystrixProperty(
+//                            name="execution.isolation.thread.timeoutInMilliseconds",
+//                            value="12000")})
+//    public List<Asset> getAssetsByCompany(String companyId){
+//        logger.info("12 secs time out Correlation Id " + UserContextHolder.getUserContext().getCorrelationId());
+//        randomIntervalSleep();
+//        return assetRepository.findAllByCompanyId(companyId);
+//    }
+
+//    @HystrixCommand(fallbackMethod = "dummyValues")
+//    public List<Asset> getAssetsByCompany(String companyId){
+//        logger.info("Fall back Correlation Id " + UserContextHolder.getUserContext().getCorrelationId());
+//        randomIntervalSleep();
+//        return assetRepository.findAllByCompanyId(companyId);
+//    }
+//    @HystrixCommand(  threadPoolKey = "assetByCompanyThreadPool",
+//            threadPoolProperties =
+//                    {@HystrixProperty(name = "coreSize",value="30"),
+//                            @HystrixProperty(name="maxQueueSize", value="10")}
+//    )
+//    public List<Asset> getAssetsByCompany(String companyId){
+//        logger.info("Bulkhead Correlation Id " + UserContextHolder.getUserContext().getCorrelationId());
+//        randomIntervalSleep();
+//        return assetRepository.findAllByCompanyId(companyId);
+//    }
+
+    @HystrixCommand(  threadPoolKey = "assetByCompanyThreadPool",
+            threadPoolProperties =
+                    {@HystrixProperty(name = "coreSize",value="20"),
+                            @HystrixProperty(name="maxQueueSize", value="5")},
+            fallbackMethod = "dummyValues",
+            commandProperties = {
+                    @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "2") }
+    )
+    public List<Asset> dummyValues(String companyId){
+        Asset asset = new Asset().withAssetId("000")
+                .withCompanyId(companyId)
+                .withCompanyName("No Company Name")
+                .withAssetType(AssetType.Fixed)
+                .withAssetName("No asset name");
+
+        List<Asset> assets = new ArrayList<>();
+        assets.add(asset);
+        return assets;
+    }
+
     public List<Asset> getAssetsByCompany(String companyId){
-        logger.info("Waiting 11 seconds Correlation Id " + UserContextHolder.getUserContext().getCorrelationId());
+        logger.info("Bulkhead Correlation Id " + UserContextHolder.getUserContext().getCorrelationId());
         randomIntervalSleep();
         return assetRepository.findAllByCompanyId(companyId);
     }
+
+
 
 
     public Asset getAsset(String companyId, String assetId, String clientType){
