@@ -17,7 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
-        <start-class>com.thoughtmechanix.eureka.EurekasvrApplication</start-class>
+        <start-class>com.thoughtmechanix.hystrix.EurekasvrApplication</start-class>
         <docker.image.name>tofikmussa/eurekasvr</docker.image.name>
         <docker.image.tag>assignment2.1</docker.image.tag>
     </properties>

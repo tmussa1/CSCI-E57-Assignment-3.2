@@ -13,7 +13,7 @@ services:
       file: ../common/docker-compose.yml
       service: confsvr
   assets-service:
-      image: tofikmussa/eureka-service:assignment2.1
+      image: tofikmussa/assets-service:assignment2.1
       ports:
         - "8081:8081"
       environment:

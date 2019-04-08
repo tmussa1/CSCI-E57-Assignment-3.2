@@ -1,9 +1,4 @@
-package com.thoughtmechanix.eureka.model;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+package com.thoughtmechanix.hystrix.model;
 
 public class Company {
 

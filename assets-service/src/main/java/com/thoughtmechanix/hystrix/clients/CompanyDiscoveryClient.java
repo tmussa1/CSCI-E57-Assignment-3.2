@@ -1,11 +1,9 @@
-package com.thoughtmechanix.eureka.clients;
+package com.thoughtmechanix.hystrix.clients;
 
-import com.thoughtmechanix.eureka.model.Company;
+import com.thoughtmechanix.hystrix.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -26,7 +24,7 @@ public class CompanyDiscoveryClient {
 
         StringBuilder uri = new StringBuilder();
         uri.append(instances.get(0).getUri().toString());
-        uri.append("/v1/company/");
+        uri.append("/v1/companys/");
         uri.append(companyId);
 
        return restTemplate.exchange(uri.toString(), GET, null, Company.class, companyId).getBody();

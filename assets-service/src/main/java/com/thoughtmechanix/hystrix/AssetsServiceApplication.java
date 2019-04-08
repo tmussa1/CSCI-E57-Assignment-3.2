@@ -1,8 +1,9 @@
-package com.thoughtmechanix.eureka;
+package com.thoughtmechanix.hystrix;
 
+import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -11,6 +12,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
+@EnableCircuitBreaker
 @EnableFeignClients
 public class AssetsServiceApplication {
 
@@ -23,5 +25,6 @@ public class AssetsServiceApplication {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
 
 }

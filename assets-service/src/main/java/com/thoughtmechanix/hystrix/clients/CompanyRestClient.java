@@ -1,6 +1,6 @@
-package com.thoughtmechanix.eureka.clients;
+package com.thoughtmechanix.hystrix.clients;
 
-import com.thoughtmechanix.eureka.model.Company;
+import com.thoughtmechanix.hystrix.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,7 @@ public class CompanyRestClient {
     private RestTemplate restTemplate;
 
     public Company getCompanyRestTemplate(String companyId){
-        return restTemplate.exchange("http://company-service/v1/company/{companyId}",
+        return restTemplate.exchange("http://company-service/v1/companys/{companyId}",
                 HttpMethod.GET, null, Company.class, companyId).getBody();
     }
 }
