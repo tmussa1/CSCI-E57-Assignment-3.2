@@ -17,6 +17,9 @@
         <module>confsvr</module>
         <module>eurekasvr</module>
         <module>company-service</module>
+        <module>company-service-new</module>
+        <module>zuulsvr</module>
+        <module>specialroutes</module>
     </modules>
 
     <parent>

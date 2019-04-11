@@ -7,6 +7,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/eurekasvr/pom.xml" />
         <option value="$PROJECT_DIR$/company-service/pom.xml" />
+        <option value="$PROJECT_DIR$/zuulsvr/pom.xml" />
+        <option value="$PROJECT_DIR$/specialroutes/pom.xml" />
+        <option value="$PROJECT_DIR$/company-service-new/pom.xml" />
       </list>
     </option>
   </component>

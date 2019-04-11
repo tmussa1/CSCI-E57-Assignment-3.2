@@ -18,5 +18,5 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://192.168.99.100:8761/hystrix/
+      defaultZone: http://192.168.99.100:8761/eureka/
          

@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 @RestController
 @RequestMapping(value="v1/companys")
@@ -16,9 +17,13 @@ public class CompanyController {
     @Autowired
     CompanyService companyService;
 
+    Logger logger = Logger.getLogger(CompanyController.class.getName());
+
     @RequestMapping(value="/{companyId}", method=RequestMethod.GET)
     public ResponseEntity<Company> getCompany(@PathVariable("companyId") String companyId){
+        logger.info("Looking up company " + companyId);
         Company company = companyService.getCompany(companyId);
+        company.setCompanyName("OLD::" + company.getCompanyName());
 
         if(company == null){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();

@@ -1,0 +1,50 @@
+server:
+  port: 5555
+eureka:
+  instance:
+    preferIpAddress: true
+    ip-address: 192.168.99.100
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://192.168.99.100:8761/eureka/
+
+zuul:
+  routes:
+    company-service: /company/**
+
+#zuul:
+#  routes:
+#    company-service: /company/**
+#    assets-service: /assets/**
+
+#zuul:
+#  ignored-services: 'company-service'
+#  routes:
+#    company-service: /company/**
+
+#zuul:
+#  ignored-services: '*'
+#  prefix: /api
+#  routes:
+#    company-service: /company/**
+#    assets-service: /assets/**
+
+#zuul:
+#  routes:
+#    assetsstatic:
+#      path: /assetsstatic/**
+#      url: http://assets-service-static:8089
+
+#zuul:
+#  routes:
+#    assetsstatic:
+#      path: /assetsstatic/**
+#      serviceId: assetsstatic
+#ribbon:
+#  eureka:
+#    enabled: false
+#assetsstatic:
+#  ribbon:
+#    listOfServers: http://assets-service-static1:8085, http://assets-service-static2:8087

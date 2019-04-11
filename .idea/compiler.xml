@@ -8,8 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="assets-service" />
         <module name="company-service" />
+        <module name="company-service (1)" />
         <module name="confsvr" />
         <module name="eurekasvr" />
+        <module name="specialroutes" />
+        <module name="zuulsvr" />
       </profile>
     </annotationProcessing>
   </component>
