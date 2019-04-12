@@ -1,7 +1,7 @@
-package com.thoughtmechanix.hystrix.clients;
+package com.thoughtmechanix.eureka.clients;
 
-import com.thoughtmechanix.hystrix.model.Company;
-import com.thoughtmechanix.hystrix.utils.UserContextHolder;
+import com.thoughtmechanix.eureka.model.Company;
+import com.thoughtmechanix.eureka.utils.UserContextHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;

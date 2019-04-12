@@ -1,6 +1,6 @@
-package com.thoughtmechanix.hystrix.repository;
+package com.thoughtmechanix.eureka.repository;
 
-import com.thoughtmechanix.hystrix.model.Asset;
+import com.thoughtmechanix.eureka.model.Asset;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

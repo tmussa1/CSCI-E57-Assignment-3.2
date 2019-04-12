@@ -1,7 +1,6 @@
-package com.thoughtmechanix.hystrix;
+package com.thoughtmechanix.eureka;
 
-import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy;
-import com.thoughtmechanix.hystrix.utils.UserContextInterceptor;
+import com.thoughtmechanix.eureka.utils.UserContextInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;

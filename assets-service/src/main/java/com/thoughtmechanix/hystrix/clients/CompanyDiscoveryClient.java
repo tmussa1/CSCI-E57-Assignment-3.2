@@ -1,6 +1,6 @@
-package com.thoughtmechanix.hystrix.clients;
+package com.thoughtmechanix.eureka.clients;
 
-import com.thoughtmechanix.hystrix.model.Company;
+import com.thoughtmechanix.eureka.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

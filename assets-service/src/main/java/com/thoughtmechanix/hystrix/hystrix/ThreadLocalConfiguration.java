@@ -1,4 +1,4 @@
-package com.thoughtmechanix.hystrix.hystrix;
+package com.thoughtmechanix.eureka.hystrix;
 
 import com.netflix.hystrix.strategy.HystrixPlugins;
 import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy;

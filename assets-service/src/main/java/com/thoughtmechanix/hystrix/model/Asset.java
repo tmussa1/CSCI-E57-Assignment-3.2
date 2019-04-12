@@ -1,4 +1,4 @@
-package com.thoughtmechanix.hystrix.model;
+package com.thoughtmechanix.eureka.model;
 
 import org.apache.commons.lang.StringUtils;
 

@@ -6,7 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/tmussa1/config-server-repo/
-          searchPaths: assets-service, company-service, zuul-service
+          searchPaths: assets-service, company-service, zuul-service, specialroutes-service
           ignore-local-ssh-settings: true
       discovery:
         enabled: true

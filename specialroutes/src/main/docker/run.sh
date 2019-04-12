@@ -16,13 +16,9 @@ echo "******** Database Server has started "
 echo "********************************************************"
 echo "Waiting for the configuration server to start on port $CONFIGSERVER_PORT"
 echo "********************************************************"
-while ! `nc -z configserver $CONFIGSERVER_PORT`; do sleep 3; done
+while ! `nc -z confsvr $CONFIGSERVER_PORT`; do sleep 3; done
 echo "*******  Configuration Server has started"
 echo "********************************************************"
 echo "Starting Special Routes Service                           "
 echo "********************************************************"
-java -Dserver.port=$SERVER_PORT   \
-     -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI             \
-     -Dspring.cloud.config.uri=$CONFIGSERVER_URI                          \
-     -Dspring.profiles.active=$PROFILE                                   \
-     -jar /usr/local/specialroutes-service/@project.build.finalName@.jar
+java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.profiles.active=$PROFILE -jar /usr/local/specialroutes-service/@project.build.finalName@.jar

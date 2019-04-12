@@ -1,7 +1,7 @@
-package com.thoughtmechanix.hystrix.hystrix;
+package com.thoughtmechanix.eureka.hystrix;
 
-import com.thoughtmechanix.hystrix.utils.UserContext;
-import com.thoughtmechanix.hystrix.utils.UserContextHolder;
+import com.thoughtmechanix.eureka.utils.UserContext;
+import com.thoughtmechanix.eureka.utils.UserContextHolder;
 
 import java.util.concurrent.Callable;
 

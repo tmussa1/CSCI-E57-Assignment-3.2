@@ -3,10 +3,8 @@ package com.thoughtmechanix.routes.controllers;
 import com.thoughtmechanix.routes.model.AbTestingRoute;
 import com.thoughtmechanix.routes.service.SpecialRoutesService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value="v1/routes/")
@@ -19,5 +17,15 @@ public class SpecialRoutesController {
     public AbTestingRoute getRoute(@PathVariable("serviceId") String serviceName){
         return specialRoutesService.getRoute(serviceName);
     }
+
+    @RequestMapping(value = "/{serviceId}" , method = RequestMethod.POST)
+    public ResponseEntity saveRoute(@PathVariable("serviceId") String serviceName,
+                                    @RequestBody AbTestingRoute route){
+        route.setServiceName(serviceName);
+        specialRoutesService.saveRoute(route);
+
+        return ResponseEntity.ok(route);
+    }
+
 
 }

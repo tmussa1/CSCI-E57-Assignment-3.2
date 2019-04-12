@@ -1,4 +1,4 @@
-package com.thoughtmechanix.hystrix.utils;
+package com.thoughtmechanix.eureka.utils;
 
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,6 @@
-package com.thoughtmechanix.hystrix.clients;
+package com.thoughtmechanix.eureka.clients;
 
-import com.thoughtmechanix.hystrix.model.Company;
+import com.thoughtmechanix.eureka.model.Company;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;

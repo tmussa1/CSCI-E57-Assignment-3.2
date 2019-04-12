@@ -1,11 +1,11 @@
-package com.thoughtmechanix.hystrix.hystrix;
+package com.thoughtmechanix.eureka.hystrix;
 
 import com.netflix.hystrix.HystrixThreadPoolKey;
 import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestVariable;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestVariableLifecycle;
 import com.netflix.hystrix.strategy.properties.HystrixProperty;
-import com.thoughtmechanix.hystrix.utils.UserContextHolder;
+import com.thoughtmechanix.eureka.utils.UserContextHolder;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Callable;
