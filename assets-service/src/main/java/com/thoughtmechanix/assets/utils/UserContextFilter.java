@@ -1,4 +1,4 @@
-package com.thoughtmechanix.eureka.utils;
+package com.thoughtmechanix.assets.utils;
 
 import org.springframework.stereotype.Component;
 
@@ -20,7 +20,7 @@ public class UserContextFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
-        UserContextHolder.getUserContext().setCorrelationId(httpServletRequest.getHeader(UserContext.CORRELATION_ID));
+        UserContextHolder.getUserContext().setCorrelationId(UserContext.CORRELATION_ID);
         logger.info("Correlation id is set" + UserContextHolder.getUserContext().getCorrelationId());
         filterChain.doFilter(httpServletRequest,servletResponse);
     }

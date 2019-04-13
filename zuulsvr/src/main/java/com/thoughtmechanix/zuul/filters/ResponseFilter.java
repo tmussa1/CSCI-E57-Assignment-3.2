@@ -32,7 +32,7 @@ public class ResponseFilter extends ZuulFilter {
     }
 
     @Override
-    public Object run() throws ZuulException {
+    public Object run() {
 
         RequestContext context = RequestContext.getCurrentContext();
 

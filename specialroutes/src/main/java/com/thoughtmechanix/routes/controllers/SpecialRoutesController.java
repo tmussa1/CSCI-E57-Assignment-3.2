@@ -14,12 +14,12 @@ public class SpecialRoutesController {
     SpecialRoutesService specialRoutesService;
 
     @RequestMapping(value= "/{serviceId}" , method = RequestMethod.GET)
-    public AbTestingRoute getRoute(@PathVariable("serviceId") String serviceName){
-        return specialRoutesService.getRoute(serviceName);
+    public ResponseEntity<AbTestingRoute> getRoute(@PathVariable("serviceId") String serviceName){
+        return ResponseEntity.ok(specialRoutesService.getRoute(serviceName));
     }
 
     @RequestMapping(value = "/{serviceId}" , method = RequestMethod.POST)
-    public ResponseEntity saveRoute(@PathVariable("serviceId") String serviceName,
+    public ResponseEntity<AbTestingRoute> saveRoute(@PathVariable("serviceId") String serviceName,
                                     @RequestBody AbTestingRoute route){
         route.setServiceName(serviceName);
         specialRoutesService.saveRoute(route);

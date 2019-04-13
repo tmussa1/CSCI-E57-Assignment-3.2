@@ -1,4 +1,4 @@
-package com.thoughtmechanix.eureka.utils;
+package com.thoughtmechanix.assets.utils;
 
 public class UserContextHolder {
     private static final ThreadLocal<UserContext> userContext = new ThreadLocal<>();

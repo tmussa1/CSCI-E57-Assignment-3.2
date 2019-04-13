@@ -1,5 +1,4 @@
 package com.thoughtmechanix.zuul.filters;
-
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
@@ -30,7 +29,9 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -48,7 +49,7 @@ public class SpecialRoutesFilter extends ZuulFilter {
     @Autowired
     RestTemplate restTemplate;
 
-    private ProxyRequestHelper proxyRequestHelper = new ProxyRequestHelper(new ZuulProperties());
+    private ProxyRequestHelper proxyRequestHelper = new ProxyRequestHelper();
 
     @Override
     public String filterType() {
@@ -66,7 +67,7 @@ public class SpecialRoutesFilter extends ZuulFilter {
     }
 
     @Override
-    public Object run() throws ZuulException {
+    public Object run() {
 
         RequestContext context = RequestContext.getCurrentContext();
 

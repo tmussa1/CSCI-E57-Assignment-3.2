@@ -1,4 +1,4 @@
-package com.thoughtmechanix.eureka.model;
+package com.thoughtmechanix.assets.model;
 
 import org.apache.commons.lang.StringUtils;
 

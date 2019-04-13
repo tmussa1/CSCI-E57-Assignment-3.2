@@ -1,7 +1,7 @@
-package com.thoughtmechanix.eureka.controllers;
+package com.thoughtmechanix.assets.controllers;
 
-import com.thoughtmechanix.eureka.model.Asset;
-import com.thoughtmechanix.eureka.services.AssetService;
+import com.thoughtmechanix.assets.model.Asset;
+import com.thoughtmechanix.assets.services.AssetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

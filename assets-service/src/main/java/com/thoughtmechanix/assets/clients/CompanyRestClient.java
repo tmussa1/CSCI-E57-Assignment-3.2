@@ -1,7 +1,7 @@
-package com.thoughtmechanix.eureka.clients;
+package com.thoughtmechanix.assets.clients;
 
-import com.thoughtmechanix.eureka.model.Company;
-import com.thoughtmechanix.eureka.utils.UserContextHolder;
+import com.thoughtmechanix.assets.model.Company;
+import com.thoughtmechanix.assets.utils.UserContextHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;

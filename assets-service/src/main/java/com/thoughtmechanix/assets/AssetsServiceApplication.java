@@ -1,6 +1,6 @@
-package com.thoughtmechanix.eureka;
+package com.thoughtmechanix.assets;
 
-import com.thoughtmechanix.eureka.utils.UserContextInterceptor;
+import com.thoughtmechanix.assets.utils.UserContextInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;

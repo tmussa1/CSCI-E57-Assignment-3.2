@@ -1,6 +1,6 @@
-package com.thoughtmechanix.eureka.clients;
+package com.thoughtmechanix.assets.clients;
 
-import com.thoughtmechanix.eureka.model.Company;
+import com.thoughtmechanix.assets.model.Company;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;

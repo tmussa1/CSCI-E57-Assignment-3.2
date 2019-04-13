@@ -1,15 +1,15 @@
-package com.thoughtmechanix.eureka.services;
+package com.thoughtmechanix.assets.services;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
-import com.thoughtmechanix.eureka.clients.CompanyDiscoveryClient;
-import com.thoughtmechanix.eureka.clients.CompanyFeignClient;
-import com.thoughtmechanix.eureka.clients.CompanyRestClient;
-import com.thoughtmechanix.eureka.model.Asset;
-import com.thoughtmechanix.eureka.model.AssetType;
-import com.thoughtmechanix.eureka.model.Company;
-import com.thoughtmechanix.eureka.repository.AssetRepository;
-import com.thoughtmechanix.eureka.utils.UserContextHolder;
+import com.thoughtmechanix.assets.clients.CompanyDiscoveryClient;
+import com.thoughtmechanix.assets.clients.CompanyFeignClient;
+import com.thoughtmechanix.assets.clients.CompanyRestClient;
+import com.thoughtmechanix.assets.model.Asset;
+import com.thoughtmechanix.assets.model.AssetType;
+import com.thoughtmechanix.assets.model.Company;
+import com.thoughtmechanix.assets.repository.AssetRepository;
+import com.thoughtmechanix.assets.utils.UserContextHolder;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

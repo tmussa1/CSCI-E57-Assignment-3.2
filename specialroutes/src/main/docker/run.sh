@@ -22,3 +22,4 @@ echo "********************************************************"
 echo "Starting Special Routes Service                           "
 echo "********************************************************"
 java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.profiles.active=$PROFILE -jar /usr/local/specialroutes-service/@project.build.finalName@.jar
+

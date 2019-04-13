@@ -37,7 +37,7 @@ public class TrackingFilter extends ZuulFilter {
     }
 
     @Override
-    public Object run() throws ZuulException {
+    public Object run() {
 
         if(isCorrelationIDPresent()){
             logger.info("tmx-correaltion-id found in pre filter " + filterUtils.getCorrelationId());

@@ -15,12 +15,3 @@ INSERT INTO assets_table  (asset_id,  company_id , asset_type, asset_name, comme
 VALUES ('b060bf0e-3af8-4fcb-b72d-374f449833ad', '2f341f84-accd-43a6-abbc-70d41de2c9d3', 'Intangible','inventory', 'good condition');
 INSERT INTO assets_table  (asset_id,  company_id , asset_type, asset_name, comment)
 VALUES ('fc3c3e7a-ee2e-47fa-8532-ade4ad0d691c', '562f5ed0-b0bf-40cf-85c1-e560631057b8', 'Current','land', 'Very good');
-
-
-
-
-
-
-
-
-

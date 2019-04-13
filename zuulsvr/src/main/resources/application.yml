@@ -30,7 +30,7 @@ management:
 
 #zuul:
 #  ignored-services: '*'
-#  prefix: /api
+  prefix: /api
 #  routes:
 #    company-service: /company/**
 #    assets-service: /assets/**
@@ -52,3 +52,10 @@ management:
 #assetsstatic:
 #  ribbon:
 #    listOfServers: http://assets-service-static1:8085, http://assets-service-static2:8087
+    
+zuul:
+  prefix: /api
+  routes:
+    assetsstatic:
+      path: /assetsstatic/**
+      url: http://assets-service-static:8089

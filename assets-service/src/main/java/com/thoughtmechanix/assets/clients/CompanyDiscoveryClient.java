@@ -1,6 +1,6 @@
-package com.thoughtmechanix.eureka.clients;
+package com.thoughtmechanix.assets.clients;
 
-import com.thoughtmechanix.eureka.model.Company;
+import com.thoughtmechanix.assets.model.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

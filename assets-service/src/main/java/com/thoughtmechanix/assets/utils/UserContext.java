@@ -1,4 +1,4 @@
-package com.thoughtmechanix.eureka.utils;
+package com.thoughtmechanix.assets.utils;
 
 import org.springframework.stereotype.Component;
 
