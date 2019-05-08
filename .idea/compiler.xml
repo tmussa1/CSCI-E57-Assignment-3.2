@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="assets-service" />
+        <module name="authentication-service" />
         <module name="company-service" />
         <module name="company-service (1)" />
+        <module name="company-service-new" />
         <module name="confsvr" />
         <module name="eurekasvr" />
         <module name="specialroutes" />

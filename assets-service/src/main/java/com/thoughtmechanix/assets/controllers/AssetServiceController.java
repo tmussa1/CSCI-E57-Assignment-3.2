@@ -35,7 +35,7 @@ public class AssetServiceController {
     public ResponseEntity<String> createAsset(@RequestBody Asset asset, @PathVariable("companyId") String companyId){
         assetService.createAsset(asset);
         return ResponseEntity.status(HttpStatus.CREATED).body(
-                "http://192.168.99.100:8080/v1/" + asset.getCompanyId() + "/assets/" +
+                "http://assets-service:8080/v1/" + asset.getCompanyId() + "/assets/" +
                     asset.getAssetId());
     }
 

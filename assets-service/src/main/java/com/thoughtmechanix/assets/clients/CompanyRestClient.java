@@ -19,7 +19,7 @@ public class CompanyRestClient {
 
     public Company getCompanyRestTemplate(String companyId){
         logger.info("Rest client correlation id " + UserContextHolder.getUserContext().getCorrelationId());
-        return restTemplate.exchange("http://zuul-service/api/company/v1/companys/{companyId}",
+        return restTemplate.exchange("http://zuul-service/company/v1/companys/{companyId}",
                 HttpMethod.GET, null, Company.class, companyId).getBody();
     }
 }

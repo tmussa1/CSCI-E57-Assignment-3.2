@@ -20,6 +20,7 @@
         <module>company-service-new</module>
         <module>zuulsvr</module>
         <module>specialroutes</module>
+        <module>authentication-service</module>
     </modules>
 
     <parent>
