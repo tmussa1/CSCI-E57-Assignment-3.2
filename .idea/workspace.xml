@@ -2,56 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef2c0e49-08b3-4165-8c84-725bbf0e6db8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/docker/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/hystrix/DelegateUserContextCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/hystrix/ThreadLocalAwareStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/hystrix/ThreadLocalConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/UserOrganization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/repository/RolesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/repository/UserOrganizationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/repository/UsersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/OauthServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/utils/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/utils/UserContextFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/utils/UserContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/utils/UserContextInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/hystrix/DelegateUserContextCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/hystrix/ThreadLocalAwareStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/hystrix/ThreadLocalConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/utils/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/utils/UserContextFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/utils/UserContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/utils/UserContextInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuulsvr/src/main/java/com/thoughtmechanix/zuul/filters/AuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/assets-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/clients/CompanyRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/clients/CompanyRestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/controllers/AssetServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/controllers/AssetServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/assets-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service-new/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service-new/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/CompanyServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/CompanyServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confsvr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/confsvr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confsvr/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/confsvr/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/common/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/common/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekasvr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekasvr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/specialroutes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/specialroutes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zuulsvr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulsvr/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/confsvr/target/" />
@@ -85,80 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authentication-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OauthServerConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/OauthServerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssetServiceController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/controllers/AssetServiceController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schema.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authentication-service/src/main/resources/schema.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authentication-service/src/main/resources/bootstrap.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/AuthenticationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authentication-service/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+            <state relative-caret-position="262">
+              <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -198,7 +84,6 @@
         <option value="$PROJECT_DIR$/confsvr/pom.xml" />
         <option value="$PROJECT_DIR$/eurekasvr/pom.xml" />
         <option value="$PROJECT_DIR$/specialroutes/pom.xml" />
-        <option value="$PROJECT_DIR$/zuulsvr/pom.xml" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/repository/RolesRepository.java" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/repository/UserOrganizationRepository.java" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/repository/UsersRepository.java" />
@@ -220,7 +105,6 @@
         <option value="$PROJECT_DIR$/company-service/pom.xml" />
         <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/hystrix/ThreadLocalAwareStrategy.java" />
         <option value="$PROJECT_DIR$/company-service/src/main/java/com/thoughtmechanix/company/hystrix/DelegateUserContextCallable.java" />
-        <option value="$PROJECT_DIR$/assets-service/pom.xml" />
         <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/security/SeucrityConfig.java" />
         <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/security/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/assets-service/src/main/java/com/thoughtmechanix/assets/AssetsServiceApplication.java" />
@@ -230,13 +114,15 @@
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/User.java" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/model/UserOrganization.java" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/resources/schema.sql" />
-        <option value="$PROJECT_DIR$/authentication-service/pom.xml" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/RolesController.java" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/UserOrganizationController.java" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/UsersAndAuthoritiesController.java" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/UsersController.java" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/controllers/AuthenticationController.java" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/assets-service/pom.xml" />
+        <option value="$PROJECT_DIR$/authentication-service/pom.xml" />
+        <option value="$PROJECT_DIR$/zuulsvr/pom.xml" />
         <option value="$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/WebSecurityConfig.java" />
       </list>
     </option>
@@ -257,7 +143,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -493,6 +379,32 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.1" type="462c0819:PsiDirectoryNode" />
+              <item name="confsvr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.1" type="462c0819:PsiDirectoryNode" />
+              <item name="confsvr" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.1" type="462c0819:PsiDirectoryNode" />
+              <item name="confsvr" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assets-microservice-parent-assignment3.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assets-microservice-parent-assignment3.1" type="462c0819:PsiDirectoryNode" />
+              <item name="confsvr" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="assets-microservice-parent-assignment3.1" type="b2602c69:ProjectViewProjectNode" />
@@ -739,15 +651,15 @@
       <workItem from="1557013903764" duration="22597000" />
       <workItem from="1557095234692" duration="2041000" />
       <workItem from="1557113429258" duration="4028000" />
-      <workItem from="1557183242484" duration="5483000" />
+      <workItem from="1557183242484" duration="8413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168471000" />
+    <option name="totallyTimeSpent" value="171401000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -770,7 +682,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32913387" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32913387" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34260616" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
@@ -829,9 +741,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docker/prod/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets-service/src/main/docker/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1021,6 +930,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1079,27 +991,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuulsvr/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-831">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authentication-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1171,6 +1062,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/confsvr/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/authentication-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1178,10 +1072,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="100" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuulsvr/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/authentication-service/src/main/java/com/thoughtmechanix/security/security/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+        <state relative-caret-position="262">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

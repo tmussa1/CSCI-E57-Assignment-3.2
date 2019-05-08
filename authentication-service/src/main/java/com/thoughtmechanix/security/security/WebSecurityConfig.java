@@ -34,8 +34,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
         authenticationManagerBuilder.inMemoryAuthentication()
-                .withUser("tofik.mussa").password("{noop}11559301").roles("USER")
+                .withUser("tofik.mussa").password("{cipher}11559301").roles("USER")
                 .and()
-                .withUser("risqua.mussa").password("{noop}11314321").roles("ADMIN", "USER");
+                .withUser("risqua.mussa").password("{cipher}11314321").roles("ADMIN", "USER");
     }
 }
