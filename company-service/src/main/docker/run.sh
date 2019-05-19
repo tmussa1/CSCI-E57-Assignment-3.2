@@ -19,6 +19,12 @@ while ! `nc -z confsvr $CONFIGSERVER_PORT `; do sleep 3; done
 echo ">>>>>>>>>>>> Configuration Server has started"
 
 echo "********************************************************"
+echo "Waiting for the kafka server to start on port $KAFKASERVER_PORT"
+echo "********************************************************"
+while ! `nc -z kafkaserver $KAFKASERVER_PORT`; do sleep 10; done
+echo "******* Kafka Server has started"
+
+echo "********************************************************"
 echo "Company service starting with Configuration Service :  $CONFIGSERVER_URI";
 echo "********************************************************"
-java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.profiles.active=$PROFILE -jar /usr/local/company-service/@project.build.finalName@.jar
+java -Dserver.port=$SERVER_PORT -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI -Dspring.cloud.config.uri=$CONFIGSERVER_URI -Dspring.profiles.active=$PROFILE -Dspring.cloud.stream.kafka.binder.brokers=$KAFKASERVER_URI -jar /usr/local/company-service/@project.build.finalName@.jar

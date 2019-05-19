@@ -40,9 +40,12 @@ services:
         SERVER_PORT: "8080"
         CONFIGSERVER_URI: "http://confsvr:8888"
         EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        KAFKASERVER_URI: "kafkaserver"
         EUREKASERVER_PORT: "8761"
         CONFIGSERVER_PORT:   "8888"
         DATABASESERVER_PORT: "5432"
+        KAFKASERVER_PORT:    "9092"
+        REDIS_PORT:          "6379"
   company-service:
       image: tofikmussa/company-service:assignment3.1
       ports:
@@ -52,9 +55,11 @@ services:
         SERVER_PORT: "8081"
         CONFIGSERVER_URI: "http://confsvr:8888"
         EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
+        KAFKASERVER_URI: "kafkaserver"
         EUREKASERVER_PORT: "8761"
         CONFIGSERVER_PORT:   "8888"
         DATABASESERVER_PORT: "5432"
+        KAFKASERVER_PORT:    "9092"
   company-service-new:
       image: tofikmussa/company-service-new:assignment3.1
       ports:
@@ -91,3 +96,11 @@ services:
         EUREKASERVER_PORT: "8761"
         CONFIGSERVER_PORT:   "8888"
         DATABASESERVER_PORT: "5432"
+  redis:
+      image: redis:alpine
+      ports:
+        - "6379:6379"
+  kafkaserver:
+      image: blacktop/kafka
+      ports:
+        - "9092:9092"

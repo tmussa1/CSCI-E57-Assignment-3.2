@@ -39,17 +39,11 @@ public class CompanyController {
 
     @RequestMapping(value="/{companyId}", method = RequestMethod.POST)
     public ResponseEntity addCompany(@PathVariable("companyId") String companyId, @RequestBody Company company){
-        try{
-            //I accounted for DB not being available for whatever reason
-            company.setCompanyId(companyId);
-            companyService.addCompany(company);
 
-            return ResponseEntity.ok().build();
+        company.setCompanyId(companyId);
+        companyService.addCompany(company);
 
-        }catch(Exception e){
-
-            return ResponseEntity.status(HttpStatus.NOT_MODIFIED).build();
-        }
+        return ResponseEntity.ok().build();
     }
 
     @RequestMapping(value="/{companyId}", method = RequestMethod.PUT)

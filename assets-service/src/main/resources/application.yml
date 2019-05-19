@@ -8,4 +8,18 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://192.168.99.100:8761/eureka/
-      
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: companyChangeTopic
+          content-type: application/json
+          group: assetsGroup
+      kafka:
+        binder:
+          brokers: 192.168.99.100
+#security:
+#  oauth2:
+#    resource:
+#      user-info-uri: http://192.168.99.100:8084/auth/user

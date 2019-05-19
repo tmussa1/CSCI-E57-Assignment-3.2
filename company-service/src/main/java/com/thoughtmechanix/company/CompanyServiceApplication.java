@@ -1,20 +1,16 @@
 package com.thoughtmechanix.company;
 
-import com.thoughtmechanix.company.utils.UserContextFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.context.annotation.Bean;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
-
-import javax.servlet.Filter;
+import org.springframework.cloud.stream.annotation.EnableBinding;
+import org.springframework.cloud.stream.messaging.Source;
 
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
-@EnableResourceServer
+@EnableBinding(Source.class)
 public class CompanyServiceApplication {
 
     public static void main(String[] args) {
